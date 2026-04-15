@@ -35,7 +35,7 @@
   .hv{margin-top:32px;font-size:15px;color:var(--dim);max-width:560px}
   .hv strong{color:var(--accent)}
   .stitle{font-size:clamp(24px,4vw,40px);font-weight:800;margin-bottom:8px;background:linear-gradient(135deg,#fff,var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-  .ssub{font-size:15px;color:var(--dim);margin-bottom:48px}
+  .ssub{font-size:15px;color:var(--dim);margin-bottom:40px}
   .mg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
   .mc{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:20px;transition:all .2s}
   .mc:hover{border-color:var(--secondary);transform:translateY(-3px)}
@@ -55,28 +55,26 @@
   .cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
   .cc{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:24px;transition:all .2s}
   .cc:hover{border-color:var(--secondary);transform:translateY(-3px)}
-  .cc .ind{font-size:12px;color:var(--secondary);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+  .cc .ind{font-size:12px;color:var(--secondary);font-weight:600;margin-bottom:8px}
   .cc .cpn{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px}
   .cc .res{font-size:14px;color:var(--dim)}
   .cc .met{font-size:20px;font-weight:800;color:var(--accent);margin-top:8px}
-  .hc2{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:32px;margin-bottom:24px;transition:all .2s}
-  .hc2:hover{border-color:var(--secondary)}
-  .hch{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:12px}
-  .hc2 h3{font-size:20px;font-weight:700;color:#fff;margin-bottom:4px}
-  .htl{font-size:12px;color:var(--secondary);background:rgba(108,60,233,0.15);padding:4px 12px;border-radius:20px;white-space:nowrap}
-  .htl span{margin-left:8px;color:var(--dim);background:rgba(255,255,255,0.06);padding:2px 8px;border-radius:10px;font-size:11px}
+  .ec{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:28px;margin-bottom:20px}
+  .ec:hover{border-color:rgba(108,60,233,0.4)}
+  .ec h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+  .eci{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,rgba(108,60,233,0.3),rgba(255,149,0,0.2));display:flex;align-items:center;justify-content:center;font-size:18px}
+  .etw{overflow-x:auto}
+  .et{width:100%;border-collapse:collapse;min-width:500px}
+  .et th{text-align:left;padding:10px 14px;font-size:12px;font-weight:600;color:var(--dim);border-bottom:1px solid rgba(255,255,255,0.06)}
+  .et td{padding:10px 14px;font-size:13px;color:var(--dim);border-bottom:1px solid rgba(255,255,255,0.03)}
+  .et td:first-child{color:#fff;font-weight:500}
+  .etag{display:inline-block;background:rgba(255,149,0,0.1);color:var(--accent);font-size:11px;padding:2px 8px;border-radius:6px;margin-right:6px}
   .hd{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:16px}
   .hdi{background:rgba(255,255,255,0.03);border-radius:10px;padding:12px 16px}
   .hdi .il{font-size:11px;color:var(--dim);margin-bottom:4px}
   .hdi .iv{font-size:14px;font-weight:600;color:#fff}
   .hdi .iv.g{color:var(--green)}
   .hdi .iv.o{color:var(--accent)}
-  .cs{background:linear-gradient(135deg,rgba(108,60,233,0.08),rgba(255,149,0,0.04));border:1px solid rgba(108,60,233,0.2);border-radius:16px;padding:24px;margin-top:20px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
-  .cs .ci{width:120px;height:90px;background:rgba(255,255,255,0.05);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:40px;flex-shrink:0}
-  .cs .cif{flex:1;min-width:200px}
-  .cs .ct{font-size:15px;font-weight:700;color:#fff;margin-bottom:4px}
-  .cs .cd{font-size:13px;color:var(--dim)}
-  .cs .cd strong{color:var(--accent)}
   .csec{background:linear-gradient(135deg,rgba(108,60,233,0.12),rgba(16,185,129,0.08));border:1px solid rgba(108,60,233,0.2);border-radius:20px;padding:40px;display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center;margin:40px 0}
   .cm{text-align:center}
   .cml{width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:32px;font-weight:800}
@@ -106,32 +104,41 @@
   .pc.do ul li::before{content:'✓';color:var(--green);font-weight:700}
   .sg{grid-template-columns:repeat(3,1fr)}
   @media(max-width:768px){.sg{grid-template-columns:1fr}}
-  .sc{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:28px;text-align:center;position:relative}
+  .sc{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:28px;text-align:center}
   .sn{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--secondary),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:#fff;margin:0 auto 16px}
   .sc h3{font-size:16px;font-weight:700;color:#fff;margin-bottom:12px}
   .sc p{font-size:13px;color:var(--dim);line-height:1.6}
   .sc code{background:rgba(108,60,233,0.15);color:var(--secondary);padding:2px 8px;border-radius:4px;font-size:12px}
+  .sd{max-width:1200px;margin:0 auto;padding:0 24px;height:1px;background:linear-gradient(90deg,transparent,rgba(108,60,233,0.3),transparent)}
   .ent-section{background:linear-gradient(180deg,var(--bg) 0%,#0d1030 100%)}
-  .ec{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:28px;margin-bottom:20px}
-  .ec:hover{border-color:rgba(108,60,233,0.4)}
-  .ec h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:16px;display:flex;align-items:center;gap:10px}
-  .eci{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,rgba(108,60,233,0.3),rgba(255,149,0,0.2));display:flex;align-items:center;justify-content:center;font-size:18px}
-  .etw{overflow-x:auto}
-  .et{width:100%;border-collapse:collapse;min-width:600px}
-  .et th{text-align:left;padding:10px 14px;font-size:12px;font-weight:600;color:var(--dim);border-bottom:1px solid rgba(255,255,255,0.06)}
-  .et td{padding:10px 14px;font-size:13px;color:var(--dim);border-bottom:1px solid rgba(255,255,255,0.03)}
-  .et td:first-child{color:#fff;font-weight:500}
-  .etag{display:inline-block;background:rgba(255,149,0,0.1);color:var(--accent);font-size:11px;padding:2px 8px;border-radius:6px;margin-right:6px}
   footer{border-top:1px solid rgba(255,255,255,0.06);padding:40px 0;text-align:center;color:var(--dim);font-size:13px}
   footer a{color:var(--secondary);text-decoration:none}
-  .sd{max-width:1200px;margin:0 auto;padding:0 24px;height:1px;background:linear-gradient(90deg,transparent,rgba(108,60,233,0.3),transparent)}
-  .vp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:24px}
-  .vp-card{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;overflow:hidden}
-  .vp-img{height:160px;background:linear-gradient(135deg,#1a1f4e,#2d1b69);display:flex;align-items:center;justify-content:center;font-size:48px}
-  .vp-body{padding:20px}
-  .vp-body h4{font-size:15px;font-weight:700;color:#fff;margin-bottom:8px}
-  .vp-body p{font-size:13px;color:var(--dim)}
-  .vp-body .vp-tag{display:inline-block;background:rgba(34,197,94,0.1);color:var(--green);font-size:11px;padding:2px 8px;border-radius:6px;margin-top:8px}
+  /* Sub Hustle Card */
+  .hc2{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:20px;padding:28px;margin-bottom:20px;transition:all .2s}
+  .hc2:hover{border-color:var(--secondary)}
+  .hc2 h3{font-size:20px;font-weight:700;color:#fff;margin-bottom:8px}
+  .htl{font-size:12px;color:var(--secondary);background:rgba(108,60,233,0.15);padding:4px 12px;border-radius:20px;display:inline-block;margin-bottom:12px}
+  .htl span{margin-left:8px;color:var(--dim);background:rgba(255,255,255,0.06);padding:2px 8px;border-radius:10px;font-size:11px}
+  /* Summit section */
+  .summit-section{background:linear-gradient(180deg,var(--bg) 0%,#0d1030 100%)}
+  .sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+  .scard{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;overflow:hidden;transition:all .2s}
+  .scard:hover{border-color:var(--secondary);transform:translateY(-2px)}
+  .scard img{width:100%;display:block;border-bottom:1px solid rgba(255,255,255,0.05)}
+  .scard .sbody{padding:16px}
+  .scard .sbody h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:6px}
+  .scard .sbody p{font-size:12px;color:var(--dim);line-height:1.5}
+  /* Big numbers */
+  .bn{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:40px 0}
+  .bnc{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:24px;text-align:center}
+  .bnc .bnn{font-size:clamp(24px,3vw,36px);font-weight:800;background:linear-gradient(135deg,var(--accent),#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .bnc .bnl{font-size:13px;color:var(--dim);margin-top:6px}
+  /* Two col grid */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:768px){.two-col{grid-template-columns:1fr}}
+  .twoc{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:24px}
+  .twoc h4{font-size:15px;font-weight:700;color:#fff;margin-bottom:8px}
+  .twoc p{font-size:13px;color:var(--dim)}
 </style>
 </head>
 <body>
@@ -141,12 +148,13 @@
     <div class="logo">🦞 豆包商业分析</div>
     <ul class="nl">
       <li><a href="#stats">数据概览</a></li>
-      <li><a href="#models">模型家族</a></li>
-      <li><a href="#pricing">价格体系</a></li>
-      <li><a href="#cases">行业案例</a></li>
-      <li><a href="#hustle">副业方向</a></li>
-      <li><a href="#enterprise">企业变现</a></li>
-      <li><a href="#start">快速上手</a></li>
+      <li><a href="#models">模型</a></li>
+      <li><a href="#price">价格</a></li>
+      <li><a href="#cases">行业</a></li>
+      <li><a href="#hustle">副业</a></li>
+      <li><a href="#enterprise">企业</a></li>
+      <li><a href="#ai-tools">AI工具</a></li>
+      <li><a href="#summit">峰会</a></li>
     </ul>
   </div>
 </nav>
@@ -160,11 +168,11 @@
       <div class="hst"><span class="num">30万亿+</span><span class="lbl">日均tokens调用量</span></div>
       <div class="hst"><span class="num">120万+</span><span class="lbl">接入企业/开发者</span></div>
       <div class="hst"><span class="num">46.4%</span><span class="lbl">公有云市场份额第一</span></div>
-      <div class="hst"><span class="num">DeepSeek 1/3</span><span class="lbl">区间定价成本</span></div>
+      <div class="hst"><span class="num">DeepSeek 1/3</span><span class="lbl">价格区间成本</span></div>
     </div>
     <a href="#start" class="cta">🚀 快速上手三步曲</a>
     <div class="hv">
-      <p>📌 火山引擎占中国公有云大模型调用量 <strong>46.4%</strong>，日均tokens超 <strong>30万亿</strong>（2025年12月），较发布时增长 <strong>137倍</strong>。4亿+终端设备覆盖，八成主流车企、七成银行、近七成C9高校。</p>
+      <p>📌 火山引擎占中国公有云大模型调用量 <strong>46.4%</strong>，日均tokens超 <strong>30万亿</strong>（2025年12月），较发布时增长 <strong>137倍</strong>。</p>
     </div>
   </div>
 </section>
@@ -175,14 +183,14 @@
     <h2 class="stitle">模型家族全景图</h2>
     <p class="ssub">覆盖文本、语音、视觉、视频的全模态能力</p>
     <div class="mg">
-      <div class="mc"><div class="mn">Doubao-1.5-pro</div><div class="mt">旗舰通用模型</div><div class="md">综合能力超越GPT-4o，中文表现尤佳</div></div>
-      <div class="mc"><div class="mn">Doubao-1.5-lite</div><div class="mt">轻量化模型</div><div class="md">成本更低，适合日常轻量任务</div></div>
+      <div class="mc"><div class="mn">Doubao-1.5-pro</div><div class="mt">旗舰通用</div><div class="md">综合能力超越GPT-4o，中文尤佳</div></div>
+      <div class="mc"><div class="mn">Doubao-1.5-lite</div><div class="mt">轻量化</div><div class="md">成本更低，适合日常轻量任务</div></div>
       <div class="mc"><div class="mn">Doubao-1.5 深度思考</div><div class="mt">推理模型</div><div class="md">数学、代码、科学推理全球第一梯队</div></div>
       <div class="mc"><div class="mn">Doubao-1.6 <span class="badge">新版</span></div><div class="mt">区间定价 2025.6</div><div class="md">首创区间定价，成本再降63%</div></div>
       <div class="mc"><div class="mn">Doubao-1.8</div><div class="mt">Agent专属 2025.12</div><div class="md">工具调用、复杂指令能力显著增强</div></div>
       <div class="mc"><div class="mn">豆包·实时语音</div><div class="mt">语音交互</div><div class="md">0.5秒响应，可打断，方言情绪感知</div></div>
       <div class="mc"><div class="mn">Seedance 1.0 pro</div><div class="mt">视频生成</div><div class="md">字节原生视频生成模型</div></div>
-      <div class="mc"><div class="mn">Seedream 4.5</div><div class="mt">图像创作</div><div class="md">支持海报、商品图、电商素材</div></div>
+      <div class="mc"><div class="mn">Seedream 4.5</div><div class="mt">图像创作</div><div class="md">海报、商品图、电商素材</div></div>
       <div class="mc"><div class="mn">豆包·视觉理解</div><div class="mt">多模态</div><div class="md">图片深度理解、分析、描述</div></div>
     </div>
   </div>
@@ -191,9 +199,9 @@
 <div class="sd"></div>
 
 <!-- Pricing -->
-<section class="ps" id="pricing">
+<section class="ps" id="price">
   <div class="c">
-    <h2 class="stitle">价格体系（重点！）</h2>
+    <h2 class="stitle">价格体系</h2>
     <p class="ssub">区间定价模式 — 0-32K区间成本只有DeepSeek R1的1/3</p>
     <div class="ptw">
       <table class="pt">
@@ -207,7 +215,7 @@
     </div>
     <div class="ph">
       <p><strong>0-32K区间</strong>是绝大部分企业使用最密集的范围，综合成本只有DeepSeek R1的<strong>1/3</strong>。</p>
-      <p style="margin-top:8px;font-size:13px">💡 折算：0.8元 = 800万汉字 ≈ <strong style="color:var(--green)">3厘/1500汉字</strong>，成本极其低廉。</p>
+      <p style="margin-top:8px;font-size:13px">💡 折算：0.8元 = 800万汉字 ≈ <strong style="color:var(--green)">3厘/1500汉字</strong></p>
     </div>
   </div>
 </section>
@@ -237,279 +245,231 @@
 <section id="hustle">
   <div class="c">
     <h2 class="stitle">低门槛副业方向（实测有效）</h2>
-    <p class="ssub">普通人如何蹭到这波红利？5条路径，门槛从⭐到⭐⭐⭐</p>
+    <p class="ssub">5条路径，门槛从⭐到⭐⭐⭐，用AI工具杠杆放大个人生产力</p>
 
     <div class="hc2">
-      <div class="hch">
-        <h3>方向一：内容创作代工</h3>
-        <div class="htl">工具链 <span>豆包 + 即梦/Seedream + 剪映</span></div>
-      </div>
-      <p style="color:var(--dim);font-size:14px">帮人写抖音带货脚本、小红书种草笔记、朋友圈文案。用AI工具批量生成，速度快、成本低、客户需求旺盛。</p>
+      <h3>① 内容创作代工</h3>
+      <div class="htl">工具 <span>豆包 + 即梦/Seedream + 剪映</span></div>
+      <p style="color:var(--dim);font-size:14px;margin-bottom:12px">帮人写抖音带货脚本、小红书种草笔记、朋友圈文案</p>
       <div class="hd">
-        <div class="hdi"><div class="il">变现方式</div><div class="iv g">按条收费 200-500元/条</div></div>
-        <div class="hdi"><div class="il">真实案例</div><div class="iv o">咖啡馆推广 → 引流87人到店</div></div>
-        <div class="hdi"><div class="il">客户收费</div><div class="iv">500元/次</div></div>
-      </div>
-      <div class="cs">
-        <div class="ci">📱</div>
-        <div class="cif">
-          <div class="ct">真实案例：抖音带货脚本代写</div>
-          <div class="cd">帮本地咖啡馆写推广笔记，<strong>引流87人到店</strong>，收费<strong>500元</strong>。用豆包+即梦生图+剪映配音，全流程30分钟。</div>
-        </div>
+        <div class="hdi"><div class="il">变现</div><div class="iv g">200-500元/条</div></div>
+        <div class="hdi"><div class="il">案例</div><div class="iv o">咖啡馆推广 → 引流87人到店</div></div>
+        <div class="hdi"><div class="il">收费</div><div class="iv">500元/次</div></div>
       </div>
     </div>
 
     <div class="hc2">
-      <div class="hch">
-        <h3>方向二：本地商家AI代运营</h3>
-        <div class="htl">工具链 <span>DeepSeek + 豆包 + 剪映</span></div>
-      </div>
-      <p style="color:var(--dim);font-size:14px">帮本地餐饮、零售商家做短视频账号运营。签几家店，每月稳定收月费，适合有本地资源的人。</p>
+      <h3>② 本地商家AI代运营</h3>
+      <div class="htl">工具 <span>DeepSeek + 豆包 + 剪映</span></div>
+      <p style="color:var(--dim);font-size:14px;margin-bottom:12px">帮餐饮、零售商家做短视频账号运营，签几家店每月稳定收月费</p>
       <div class="hd">
-        <div class="hdi"><div class="il">月费标准</div><div class="iv g">800-3000元/店/月</div></div>
-        <div class="hdi"><div class="il">真实案例</div><div class="iv o">火锅店短视频 → 月签3家</div></div>
+        <div class="hdi"><div class="il">月费</div><div class="iv g">800-3000元/店/月</div></div>
+        <div class="hdi"><div class="il">案例</div><div class="iv o">火锅店代运营 → 月签3家</div></div>
         <div class="hdi"><div class="il">月收入</div><div class="iv">月入过万</div></div>
       </div>
-      <div class="cs">
-        <div class="ci">🍲</div>
-        <div class="cif">
-          <div class="ct">真实案例：火锅店代运营</div>
-          <div class="cd">帮本地火锅店做抖音账号运营，<strong>月签3家店</strong>，月费2000元/家，<strong>月收入6000元+</strong>。用DeepSeek策划选题，豆包生成脚本，剪映批量出片。</div>
-        </div>
-      </div>
     </div>
 
     <div class="hc2">
-      <div class="hch">
-        <h3>方向三：AI短剧/短视频创作</h3>
-        <div class="htl">工具链 <span>豆包 + 即梦/小象 + 豆包配音</span></div>
-      </div>
-      <p style="color:var(--dim);font-size:14px">AI生成视频短剧，以前30万制作费，现在30分钟几十元。酱板鸭AI短剧已爆火，田园轻动漫账号涨粉飞快。</p>
+      <h3>③ AI短剧/短视频创作</h3>
+      <div class="htl">工具 <span>豆包 + 即梦/小象 + 豆包配音</span></div>
+      <p style="color:var(--dim);font-size:14px;margin-bottom:12px">以前30万制作费，现在30分钟几十元。酱板鸭AI短剧已爆火验证</p>
       <div class="hd">
-        <div class="hdi"><div class="il">制作成本</div><div class="iv o">30万 → 几十元/集</div></div>
+        <div class="hdi"><div class="il">成本</div><div class="iv o">30万 → 几十元/集</div></div>
         <div class="hdi"><div class="il">爆火案例</div><div class="iv g">酱板鸭AI短剧</div></div>
-        <div class="hdi"><div class="il">涨粉效果</div><div class="iv">田园轻动漫账号飞快</div></div>
-      </div>
-      <div class="cs">
-        <div class="ci">🎬</div>
-        <div class="cif">
-          <div class="ct">效果展示：AI生成短剧</div>
-          <div class="cd">用豆包写剧本 → 即梦/小象生视频 → 豆包配音。30分钟出片，单集成本<strong>几十元</strong>。酱板鸭AI短剧已验证市场接受度，田园轻动漫账号持续涨粉。</div>
-        </div>
       </div>
     </div>
 
     <div class="hc2">
-      <div class="hch">
-        <h3>方向四：技能培训与模板售卖</h3>
-        <div class="htl">工具链 <span>豆包扮演私教 + 生成模板</span></div>
-      </div>
-      <p style="color:var(--dim);font-size:14px">整理AI使用模板（简历优化、PPT制作、数据整理），录制教程专栏，在抖音/小红书变现。</p>
+      <h3>④ 技能培训与模板售卖</h3>
+      <div class="htl">工具 <span>豆包 + 生成模板</span></div>
+      <p style="color:var(--dim);font-size:14px;margin-bottom:12px">整理AI使用模板（简历优化、PPT制作、数据整理），录制教程专栏变现</p>
       <div class="hd">
-        <div class="hdi"><div class="il">模板定价</div><div class="iv g">单模板 29-99元</div></div>
-        <div class="hdi"><div class="il">专栏课程</div><div class="iv o">抖音/小红书变现</div></div>
-        <div class="hdi"><div class="il">边际成本</div><div class="iv">接近零</div></div>
+        <div class="hdi"><div class="il">单模板</div><div class="iv g">29-99元</div></div>
+        <div class="hdi"><div class="il">专栏</div><div class="iv o">抖音/小红书变现</div></div>
       </div>
     </div>
 
     <div class="hc2">
-      <div class="hch">
-        <h3>方向五：电商素材代生产</h3>
-        <div class="htl">工具链 <span>豆包文生图 + 智能抠图 + 一键海报</span></div>
-      </div>
-      <p style="color:var(--dim);font-size:14px">给电商商家生成商品主图、详情页素材。市场需求大，AI出图速度快。</p>
+      <h3>⑤ 电商素材代生产</h3>
+      <div class="htl">工具 <span>豆包文生图 + 抠图 + 一键海报</span></div>
+      <p style="color:var(--dim);font-size:14px;margin-bottom:12px">给电商商家生成商品主图、详情页素材</p>
       <div class="hd">
-        <div class="hdi"><div class="il">单图报价</div><div class="iv g">50-200元/张</div></div>
-        <div class="hdi"><div class="il">套图报价</div><div class="iv o">300-800元/套</div></div>
-        <div class="hdi"><div class="il">客户类型</div><div class="iv">淘宝/京东/拼多多商家</div></div>
+        <div class="hdi"><div class="il">单图</div><div class="iv g">50-200元</div></div>
+        <div class="hdi"><div class="il">套图</div><div class="iv o">300-800元/套</div></div>
       </div>
     </div>
 
     <!-- Combo -->
     <div class="csec">
-      <div class="cm ds">
-        <div class="cml">DS</div>
-        <div class="cmt">DeepSeek</div>
-        <div class="cmr">逻辑分析 · 任务拆解 · 选题策划</div>
-      </div>
+      <div class="cm ds"><div class="cml">DS</div><div class="cmt">DeepSeek</div><div class="cmr">逻辑分析 · 任务拆解 · 选题策划</div></div>
       <div class="ca">+</div>
-      <div class="cm db">
-        <div class="cml">豆</div>
-        <div class="cmt">豆包</div>
-        <div class="cmr">中文语感 · 轻量内容 · 语音交互</div>
-      </div>
+      <div class="cm db"><div class="cml">豆</div><div class="cmt">豆包</div><div class="cmr">中文语感 · 轻量内容 · 语音交互</div></div>
     </div>
-    <p style="text-align:center;color:var(--dim);font-size:14px;margin-top:-20px">= <strong style="color:#fff">"想清楚 + 写到位"</strong> 的完整闭环，适合：本地代运营 / 简历优化 / 论文辅导 / 电商文案</p>
+    <p style="text-align:center;color:var(--dim);font-size:14px;margin-top:-20px">= <strong style="color:#fff">"想清楚 + 写到位"</strong> 完整闭环</p>
 
     <!-- Opportunity Matrix -->
     <h2 class="stitle" style="margin-top:64px">机会矩阵</h2>
-    <p class="ssub">5种机会类型，门槛/投入/收益一目了然</p>
     <div class="mtw">
       <table class="mt2">
         <thead><tr><th>机会类型</th><th>门槛</th><th>投入</th><th>预期收益</th><th>适合人群</th></tr></thead>
         <tbody>
           <tr><td>AI文案兼职</td><td><span class="stars">⭐</span></td><td>&lt;100元/月</td><td>2000-5000/月</td><td>文字工作者</td></tr>
-          <tr><td>本地商家代运营</td><td><span class="stars">⭐⭐</span></td><td>500-1000元/月</td><td>5000-20000/月          <tr><td>短视频创作</td><td><span class="stars">⭐⭐</span></td><td>设备+时间</td><td>不封顶</td><td>有创意表达欲</td></tr>
+          <tr><td>本地商家代运营</td><td><span class="stars">⭐⭐</span></td><td>500-1000元/月</td><td>5000-20000/月</td><td>有本地资源</td></tr>
+          <tr><td>短视频创作</td><td><span class="stars">⭐⭐</span></td><td>设备+时间</td><td>不封顶</td><td>有创意表达欲</td></tr>
           <tr><td>AI模板售卖</td><td><span class="stars">⭐⭐</span></td><td>&lt;500元</td><td>被动收入</td><td>有整理能力</td></tr>
           <tr><td>技能培训/社群</td><td><span class="stars">⭐⭐⭐</span></td><td>1000-3000元</td><td>不封顶</td><td>有某领域积累</td></tr>
         </tbody>
       </table>
     </div>
-  </div>
-</section>
 
-<div class="sd"></div>
-
-<!-- Pitfall Guide -->
-<section id="pitfall">
-  <div class="c">
-    <h2 class="stitle">避坑指南</h2>
-    <p class="ssub">别做的 vs 应该做的，对比清晰</p>
+    <!-- Pitfall -->
+    <h2 class="stitle" style="margin-top:64px">避坑指南</h2>
     <div class="pg">
-      <div class="pc dont">
-        <h3>❌ 别做的</h3>
-        <ul>
-          <li>花大价钱买"AI暴富课"，工具本身免费</li>
-          <li>追风口追到没资源的地方</li>
-          <li>同时做太多方向，没有一个能深耕</li>
-        </ul>
-      </div>
-      <div class="pc do">
-        <h3>✅ 应该做的</h3>
-        <ul>
-          <li>先用免费版豆包跑通一个最小闭环</li>
-          <li>从自己已有的资源/人脉/技能出发</li>
-          <li>找到1-2个方向，死磕3个月看结果</li>
-        </ul>
-      </div>
+      <div class="pc dont"><h3>❌ 别做的</h3><ul>
+        <li>花大价钱买"AI暴富课"，工具        <li>花大价钱买"AI暴富课"，工具本身免费</li>
+        <li>追风口追到没资源的地方</li>
+        <li>同时做太多方向，没有一个能深耕</li>
+      </ul></div>
+      <div class="pc do"><h3>✅ 应该做的</h3><ul>
+        <li>先用免费版豆包跑通一个最小闭环</li>
+        <li>从自己已有的资源/人脉/技能出发</li>
+        <li>找到1-2个方向，死磕3个月看结果</li>
+      </ul></div>
     </div>
   </div>
 </section>
 
 <div class="sd"></div>
 
-<!-- Enterprise -->
-<section class="ent-section" id="enterprise">
+<!-- Summit Section -->
+<section class="summit-section" id="summit">
   <div class="c">
-    <h2 class="stitle">企业如何用豆包变现？</h2>
-    <p class="ssub">7大行业解决方案，按场景收费，从月租到千万级项目不等</p>
+    <h2 class="stitle">火山引擎峰会核心内容</h2>
+    <p class="ssub">来源：火山引擎生态伙伴峰会 · 天扬AI | 已收录9张现场照片</p>
+
+    <!-- Summit images grid -->
+    <div class="sgrid">
+      <div class="scard">
+        <img src="https://i.ibb.co/ymYbrT9M/doubao-img1.jpg" alt="种植式AI落地方法论" loading="lazy">
+        <div class="sbody"><h4>🌱 AI落地"种植式"方法论</h4><p>土壤=大模型、良种=知识库、培育=智能体、硕果=商业结果</p></div>
+      </div>
+      <div class="scard">
+        <img src="https://i.ibb.co/twKS48hM/doubao-img10.jpg" alt="按岗位匹配AI工具" loading="lazy">
+        <div class="sbody"><h4>👔 按岗位匹配AI工具</h4><p>老板/管理者、销售/市场、运营/客服、行政/文员 各有对应工具</p></div>
+      </div>
+      <div class="scard">
+        <img src="https://i.ibb.co/CL2Pqmk/doubao-img2.jpg" alt="中小企业6大策略" loading="lazy">
+        <div class="sbody"><h4>📊 中小企业6大策略</h4><p>聚焦黄金场景、借力生态、数据架构、人机协作、平衡风险、分阶段实施</p></div>
+      </div>
+      <div class="scard">
+        <img src="https://i.ibb.co/nMjsPsY4/doubao-img3.jpg" alt="AI对个人企业国家影响" loading="lazy">
+        <div class="sbody"><h4>⚠️ 核心结论：要么AI化，要么被边缘化</h4><p>个人：淘汰不会用AI的人 | 企业：不用AI重构5年内消失 | 国家：两弹一星工程</p></div>
+      </div>
+      <div class="scard">
+        <img src="https://i.ibb.co/Lhn8RSDc/doubao-img5.jpg" alt="AI工具全景分类1" loading="lazy">
+        <div class="sbody"><h4>📝 AI工具全景分类（一）</h4><p>内容生成（文案/方案/话术）+ 视觉设计（海报/详情页/LOGO）</p></div>
+      </div>
+      <div class="scard">
+        <img src="https://i.ibb.co/spqW8DMh/doubao-img6.jpg" alt="AI工具全景分类2" loading="lazy">
+        <div class="sbody"><h4>🎬 AI工具全景分类（二）</h4><p>短视频AI（1人=10条团队）+ 智能办公（老板每天省2-3小时）</p></div>
+      </div>
+      <div class="scard">
+        <img src="https://i.ibb.co/JjLfDjYV/doubao-img7.jpg" alt="AI工具全景分类3" loading="lazy">
+        <div class="sbody"><h4>📞 AI工具全景分类（三）</h4><p>销售客服AI（24h接单）+ 数据分析AI（不靠感觉，靠数据赚钱）</p></div>
+      </div>
+      <div class="scard">
+        <img src="https://i.ibb.co/xS0sV94W/doubao-img8.jpg" alt="企业选AI三大原则" loading="lazy">
+        <div class="sbody"><h4>✅ 企业选AI三大原则</h4><p>低成本低门槛 + 易上手易落地 + 见效快可量化</p></div>
+      </div>
+      <div class="scard">
+        <img src="https://i.ibb.co/279kFZcq/doubao-img9.jpg" alt="按行业匹配AI工具" loading="lazy">
+        <div class="sbody"><h4>🏢 按行业匹配AI工具</h4><p>零售电商/生产制造/服务本地生活/商贸咨询培训 各有工具清单</p></div>
+      </div>
+    </div>
+
+    <!-- Key insights extracted -->
+    <h2 class="stitle" style="margin-top:64px">峰会核心结论精选</h2>
+
+    <div class="two-col" style="margin-bottom:24px">
+      <div class="twoc">
+        <h4>👤 个人</h4>
+        <p>AI不会取代人，但会淘汰"不会用AI提升自身能力"的人。终身学习与适应能力将成为未来就业核心竞争力。</p>
+      </div>
+      <div class="twoc">
+        <h4>🏢 企业</h4>
+        <p>不用AI重构业务的企业将在5年内消失（李彦宏警告）。AI不仅是效率工具，更是重构商业模式的催化剂。</p>
+      </div>
+    </div>
+    <div class="two-col" style="margin-bottom:24px">
+      <div class="twoc">
+        <h4>🌍 国家</h4>
+        <p>大模型是21世纪的"两弹一星"工程，关乎技术主权与长期竞争力。</p>
+      </div>
+      <div class="twoc">
+        <h4>🚀 最小闭环</h4>
+        <p>今天：跑一个Prompt → 本周：整理知识库 → 本月：解决一个场景 → 本季：评估ROI复制</p>
+      </div>
+    </div>
+
+    <!-- Enterprise section -->
+    <h2 class="stitle" style="margin-top:64px" id="enterprise">企业如何用豆包变现？</h2>
+    <p class="ssub">7大行业解决方案，按场景收费，从月租到千万级项目</p>
 
     <div class="ec">
-      <h3>🏦 金融行业</h3>
+      <h3>🏦 金融 · 🚗 汽车 · 🎓 教育 · 💊 医疗 · 🛒 零售 · 🎬 内容 · 💼 企业服务</h3>
       <div class="etw">
         <table class="et">
-          <thead><tr><th>场景</th><th>变现方式</th><th>案例数据</th></tr></thead>
+          <thead><tr><th>行业</th><th>场景</th><th>变现方式</th><th>案例</th></tr></thead>
           <tbody>
-            <tr><td><span class="etag">智能客服</span>7×24h问答</td><td>SaaS月租 5000-30000/月</td><td>杭州银行：准确率90%+，人工成本-60%</td></tr>
-            <tr><td><span class="etag">风控反欺诈</span>实时分析</td><td>调用量收费+定制费</td><td>民生银行：欺诈识别+40%，年省2300万</td></tr>
-            <tr><td><span class="etag">智能投顾</span>个性化理财</td><td>订阅制 199-999/月/人</td><td>券商、私行在跑</td></tr>
-            <tr><td><span class="etag">贷款审批</span>材料审核</td><td>按件 5-20元/笔</td><td>城商行在用</td></tr>
+            <tr><td>金融</td><td><span class="etag">智能客服</span><span class="etag">风控</span></td><td>5000-30000/月</td><td>民生银行：年省2300万</td></tr>
+            <tr><td>汽车</td><td><span class="etag">座舱</span><span class="etag">营销</span></td><td>授权费/年费</td><td>80%主流车企</td></tr>
+            <tr><td>教育</td><td><span class="etag">备课</span><span class="etag">批改</span></td><td>29-99/人/月</td><td>浙大：备课-30%</td></tr>
+            <tr><td>医疗</td><td><span class="etag">导诊</span><span class="etag">咨询</span></td><td>5-20万/年</td><td>三甲在谈</td></tr>
+            <tr><td>零售</td><td><span class="etag">客服</span><span class="etag">素材</span></td><td>1000-10000/月</td><td>光明乳业、海底捞</td></tr>
+            <tr><td>内容</td><td><span class="etag">短剧</span><span class="etag">出海</span></td><td>分账+定制</td><td>酱板鸭爆火</td></tr>
+            <tr><td>企业服务</td><td><span class="etag">销售</span><span class="etag">HR</span><span class="etag">法务</span></td><td>999-9999/月</td><td>B2B企业</td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <div class="ec">
-      <h3>🚗 汽车行业</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>场景</th><th>变现方式</th><th>案例数据</th></tr></thead>
-          <tbody>
-            <tr><td><span class="etag">智能座舱</span>语音交互</td><td>车载授权，按车型台数收</td><td>奔驰/宝马/上汽80%车企，响应20ms</td></tr>
-            <tr><td><span class="etag">售后客服</span>SaaS</td><td>10-50万/年</td><td>4S店集团在用</td></tr>
-            <tr><td><span class="etag">营销素材</span>AI生成</td><td>按条 500-2000/条</td><td>经销商集团</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="ec">
-      <h3>🎓 教育行业</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>场景</th><th>变现方式</th><th>案例数据</th></tr></thead>
-          <tbody>
-            <tr><td><span class="etag">智能备课</span>一键生成教案</td><td>教师订阅 29-99/月</td><td>浙大/武汉教育云：备课时间-30%</td></tr>
-            <tr><td><span class="etag">作业批改</span>AI辅助</td><td>按学生数收</td><td>K12机构在跑</td></tr>
-            <tr><td><span class="etag">个性化学习</span>学情分析</td><td>家长订阅 199-599/月</td><td>学习机品牌</td></tr>
-            <tr><td><span class="etag">题库生成</span>知识点→习题</td><td>1-5元/题</td><td>教培机构</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="ec">
-      <h3>💊 医疗健康</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>场景</th><th>变现方式</th><th>案例数据</th></tr></thead>
-          <tbody>
-            <tr><td><span class="etag">导诊分诊</span>症状→科室</td><td>医院SaaS 5-20万/年</td><td>三甲在谈</td></tr>
-            <tr><td><span class="etag">健康咨询</span>慢病管理</td><td>患者订阅 39-99/月</td><td>互联网医疗平台</td></tr>
-            <tr><td><span class="etag">病历整理</span>自动生成</td><td>10-50元/份</td><td>医院信息化</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="ec">
-      <h3>🛒 零售与电商</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>场景</th><th>变现方式</th><th>案例数据</th></tr></thead>
-          <tbody>
-            <tr><td><span class="etag">智能客服</span>售前售后</td><td>SaaS月租 1000-10000/月</td><td>光明乳业、海底捞</td></tr>
-            <tr><td><span class="etag">商品文案</span>批量生成</td><td>按条 10-50元/条</td><td>电商商家</td></tr>
-            <tr><td><span class="etag">短视频带货</span>脚本+配音</td><td>按条 100-500/条</td><td>直播机构</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="ec">
-      <h3>🎬 内容与媒体</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>场景</th><th>变现方式</th><th>案例数据</th></tr></thead>
-          <tbody>
-            <tr><td><span class="etag">AI短剧</span>小说→视频</td><td>平台分账+定制费</td><td>酱板鸭短剧爆火</td></tr>
-            <tr><td><span class="etag">出海内容</span>翻译+本地化</td><td>按分钟收费</td><td>跨境MCN</td></tr>
-            <tr><td><span class="etag">知识付费</span>课程+问答机器人</td><td>专栏订阅 199-999</td><td>知识博主</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="ec">
-      <h3>💼 企业服务（通用）</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>场景</th><th>变现方式</th><th>案例数据</th></tr></thead>
-          <tbody>
-            <tr><td><span class="etag">销售赋能</span>话术/邮件/朋友圈</td><td>SaaS 199-999/人/月</td><td>B2B企业</td></tr>
-            <tr><td><span class="etag">HR助手</span>JD+简历+面试</td><td>按员工数收</td><td>中小企业</td></tr>
-            <tr><td><span class="etag">法务辅助</span>合同审查+咨询</td><td>999-9999/月</td><td>律所/企业法务</td></tr>
-            <tr><td><span class="etag">财务自动化</span>报销+报表+税务</td><td>按账套收费</td><td>代账公司</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- Path Table -->
-    <h2 class="stitle" style="margin-top:64px">变现路径总结</h2>
-    <div class="mtw" style="margin-top:24px">
+    <div class="mtw">
       <table class="mt2">
-        <thead><tr><th>路径</th><th>适合对象</th><th>启动成本</th><th>盈利模型</th><th>难度</th></tr></thead>
+        <thead><tr><th>变现路径</th><th>适合对象</th><th>启动成本</th><th>难度</th></tr></thead>
         <tbody>
-          <tr><td>API中间商</td><td>有客户资源的创业者</td><td>&lt;1万</td><td>差价+订阅</td><td><span class="stars">⭐</span></td></tr>
-          <tr><td>垂直SaaS</td><td>有行业背景的团队</td><td>5-20万</td><td>年费订阅</td><td><span class="stars">⭐⭐⭐</span></td></tr>
-          <tr><td>行业解决方案</td><td>有项目交付能力的公司</td><td>10-50万</td><td>项目制+维护费</td><td><span class="stars">⭐⭐⭐⭐</span></td></tr>
-          <tr><td>平台型产品</td><td>有融资能力的创业团队</td><td>50万+</td><td>GMV分成+增值</td><td><span class="stars">⭐⭐⭐⭐⭐</span></td></tr>
+          <tr><td>API中间商</td><td>有客户资源的创业者</td><td>&lt;1万</td><td><span class="stars">⭐</span></td></tr>
+          <tr><td>垂直SaaS</td><td>有行业背景的团队</td><td>5-20万</td><td><span class="stars">⭐⭐⭐</span></td></tr>
+          <tr><td>行业解决方案</td><td>有项目交付能力的公司</td><td>10-50万</td><td><span class="stars">⭐⭐⭐⭐</span></td></tr>
+          <tr><td>平台型产品</td><td>有融资能力的创业团队</td><td>50万+</td><td><span class="stars">⭐⭐⭐⭐⭐</span></td></tr>
         </tbody>
       </table>
     </div>
-    <div class="ph" style="margin-top:24px">
-      <p>🚀 <strong>最小可行路径</strong>：先从"API中间商"切入，拿几个客户跑通闭环，再往SaaS或解决方案升级。边际成本接近零，收益持续。</p>
+
+    <div class="ph" style="margin-top:20px">
+      <p>🚀 <strong>最小可行路径</strong>：先从"API中间商"切入，拿几个客户跑通闭环，再往SaaS或解决方案升级。</p>
+    </div>
+
+    <!-- Outsourcing -->
+    <h2 class="stitle" style="margin-top:64px">AI外包接单平台</h2>
+    <p class="ssub">有了工具，下一步是找到靠谱的接单渠道</p>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:24px">
+      <div class="twoc">
+        <h4>🏢 垂直AI外包</h4>
+        <p>程序员客栈、开源众包、DataJuren、LabelStudio</p>
+        <h4 style="margin-top:12px">🌐 通用外包</h4>
+        <p>猪八戒（文案/设计）、一品威客、闲鱼（AI代做头像/壁纸）</p>
+      </div>
+      <div class="twoc">
+        <h4>📱 内容平台</h4>
+        <p>抖音（短剧/带货分成）、小红书（种草笔记）、公众号（内容付费）</p>
+        <h4 style="margin-top:12px">💼 企业端</h4>
+        <p>企业微信/钉钉社群、BOSS直聘（AI兼职）、行业展会现场对接</p>
+      </div>
+    </div>
+
+    <div class="ph">
+      <p>💰 <strong>最快变现路径</strong>：闲鱼挂"AI代做" → 验证需求 → 猪八戒接单冲好评 → 抖音小红书发案例自然引流</p>
     </div>
   </div>
 </section>
@@ -521,7 +481,7 @@
   <div class="c">
     <h2 class="stitle">快速上手三步曲</h2>
     <p class="ssub">今天就开始，不等待</p>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px" class="sg">
+    <div class="sg">
       <div class="sc">
         <div class="sn">1</div>
         <h3>打开豆包APP</h3>
@@ -537,316 +497,6 @@
         <h3>验证闭环</h3>
         <p>收不收费不重要，重要的是<strong style="color:var(--accent)">验证AI能帮人解决问题</strong>，这才是生意的起点。</p>
       </div>
-    </div>
-
-    <!-- Strategy Section -->
-    <h2 class="stitle" style="margin-top:64px">中小企业AI落地6大策略</h2>
-    <p class="ssub" style="margin-bottom:24px">来源：火山引擎生态伙伴峰会 · 天扬AI</p>
-
-    <div class="ec" style="background:linear-gradient(135deg,rgba(108,60,233,0.08),rgba(255,149,0,0.04));border-color:rgba(108,60,233,0.3)">
-      <h3 style="font-size:18px;font-weight:700;color:#fff;margin-bottom:16px">🌱 核心框架：AI落地的"种植式"方法论</h3>
-      <img src="https://i.ibb.co/ymYbrT9M/doubao-img1.jpg" alt="种植式AI落地方法论" style="width:100%;max-width:700px;border-radius:12px;margin-bottom:16px;border:1px solid rgba(255,255,255,0.1)">
-      <p style="color:var(--dim);font-size:13px;margin-bottom:16px">图1：AI落地的"种植式"方法论 — 农业种植逻辑对应AI应用四步（来源：火山引擎生态伙伴峰会）</p>
-      <p style="color:var(--dim);font-size:14px;margin-bottom:16px">农业种植 → AI应用，一一对应：</p>
-      <div class="hd" style="max-width:700px">
-        <div class="hdi"><div class="il">🌍 土壤</div><div class="iv">选对大模型<br><small style="color:var(--dim)">大厂提供，养分基础</small></div></div>
-        <div class="hdi"><div class="il">🌾 良种</div><div class="iv">萃取知识库<br><small style="color:var(--dim)">产品/流程/经验，差异化核心</small></div></div>
-        <div class="hdi"><div class="il">⚙️ 培育</div><div class="iv">武装智能体<br><small style="color:var(--dim)">替代人工重复劳作</small></div></div>
-        <div class="hdi"><div class="il">🍎 硕果</div><div class="iv">拿到大结果<br><small style="color:var(--dim)">商业成果落地</small></div></div>
-      </div>
-      <div class="ph" style="margin-top:16px">
-        <p>💡 <strong>关键洞见</strong>：土壤（大模型）大厂都能用，良种（企业独特知识）才是差异化竞争力。</p>
-      </div>
-    </div>
-
-    <img src="https://i.ibb.co/CL2Pqmk/doubao-img2.jpg" alt="中小企业AI落地6大方向" style="width:100%;max-width:700px;border-radius:12px;margin:24px 0 8px;border:1px solid rgba(255,255,255,0.1)">
-    <p style="color:var(--dim);font-size:13px;margin-bottom:0">图2：中小企业AI落地6大方向（来源：火山引擎生态伙伴峰会 · 天扬AI）</p>
-
-    <div class="mtw" style="margin-top:24px">
-      <table class="mt2">
-        <thead><tr><th>策略</th><th>核心要点</th><th>与豆包的机会关联</th></tr></thead>
-        <tbody>
-          <tr><td>1. 聚焦"黄金场景"</td><td>以轻量化AI工具切入，找到ROI最高的场景先跑通</td><td>豆包API成本极低，轻量化切入首选</td></tr>
-          <tr><td>2. 借力开放生态</td><td>降低技术门槛，用成熟生态能力快速搭建</td><td>火山引擎API+智能体+知识库全套可选</td></tr>
-          <tr><td>3. 重构数据架构</td><td>打破"孤岛"陷阱，让数据成为AI的养分</td><td>企业知识库 = "良种"，差异化核心</td></tr>
-          <tr><td>4. 人机协作</td><td>AI不是替代人，是增强人；人机协同效率最高</td><td>豆包+DeepSeek组合 = 人机协作最佳实践</td></tr>
-          <tr><td>5. 平衡创新与风险</td><td>构建安全防线，AI应用要可控可追溯</td><td>先用免费额度跑通闭环，再付费升级</td></tr>
-          <tr><td>6. 分阶段实施</td><td>避免一步到位，小步快跑、快速迭代</td><td>API中间商 → 垂直SaaS → 解决方案</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="ec" style="margin-top:24px">
-      <h3 style="font-size:18px;font-weight:700;color:#fff;margin-bottom:16px">🚀 最小闭环路径（基于火山引擎官方方法论）</h3>
-      <div class="sg" style="grid-template-columns:repeat(4,1fr)">
-        <div class="sc"><div class="sn">今</div><h3>今天</h3><p>打开豆包APP，跑一个真实Prompt，验证AI能解决什么问题</p></div>
-        <div class="sc"><div class="sn">周</div><h3>本周</h3><p>整理企业内部知识，作为"良种"注入知识库</p></div>
-        <div class="sc"><div class="sn">月</div><h3>本月</h3><p>用豆包API+简单智能体，解决一个具体业务场景</p></div>
-        <div class="sc"><div class="sn">季</div><h3>本季</h3><p>评估ROI，决策是否扩展到更多场景或升级为SaaS</p></div>
-      </div>
-      <p style="margin-top:16px;text-align:center;color:var(--accent);font-size:14px">核心逻辑：用AI解决一个具体问题 → 验证 → 复制。 不要想着"做一个AI系统"。</p>
-    </div>
-
-    <!-- AI Impact Section -->
-    <h2 class="stitle" style="margin-top:64px">AI对个人/企业/国家的核心影响</h2>
-    <p class="ssub" style="margin-bottom:24px">来源：火山引擎生态伙伴峰会 · 核心结论</p>
-
-    <div class="ec" style="background:linear-gradient(135deg,rgba(239,68,68,0.08),rgba(108,60,233,0.08));border-color:rgba(239,68,68,0.3);margin-bottom:20px">
-      <img src="https://i.ibb.co/nMjsPsY4/doubao-img3.jpg" alt="AI核心结论金字塔" style="width:100%;max-width:700px;border-radius:12px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.1)">
-      <p style="color:var(--dim);font-size:13px;margin-bottom:16px">图3：AI对个人/企业/国家的核心影响 — 金字塔结论</p>
-      <div class="hd" style="max-width:700px">
-        <div class="hdi" style="border-left:3px solid var(--accent)"><div class="il">👤 个人</div><div class="iv" style="font-size:13px">AI不会取代人，但会淘汰"不会用AI提升自身能力"的人</div></div>
-        <div class="hdi" style="border-left:3px solid var(--red)"><div class="il">🏢 企业</div><div class="iv" style="font-size:13px">不用AI重构业务的企业将在5年内消失（李彦宏警告）</div></div>
-        <div class="hdi" style="border-left:3px solid var(--secondary)"><div class="il">🌍 国家</div><div class="iv" style="font-size:13px">大模型是21世纪的"两弹一星"工程，技术主权竞争</div></div>
-      </div>
-      <div class="ph" style="margin-top:16px;border-left-color:var(--red)">
-        <p>⚠️ <strong>核心结论</strong>：要么AI化，要么被AI边缘化。</p>
-      </div>
-    </div>
-
-    <!-- Enterprise Flow Section -->
-    <h2 class="stitle" style="margin-top:64px">AI重构企业全流程</h2>
-    <p class="ssub" style="margin-bottom:24px">来源：火山引擎生态伙伴峰会 · 企业AI化路线图</p>
-
-    <div class="ec" style="margin-bottom:20px">
-      <img src="https://i.ibb.co/mFvfNMHr/doubao-img4.jpg" alt="AI重构企业全流程" style="width:100%;max-width:700px;border-radius:12px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.1)">
-      <p style="color:var(--dim);font-size:13px;margin-bottom:16px">图4：AI重构企业组织全流程 — 研发/生产/营销/客服/管理全链路AI化</p>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px">
-        <span style="background:rgba(59,130,246,0.15);color:#60a5fa;padding:6px 14px;border-radius:20px;font-size:13px">🧪 研发设计</span>
-        <span style="background:rgba(59,130,246,0.15);color:#60a5fa;padding:6px 14px;border-radius:20px;font-size:13px">🏭 生产制造</span>
-        <span style="background:rgba(239,68,68,0.15);color:#f87171;padding:6px 14px;border-radius:20px;font-size:13px">📣 营销推广</span>
-        <span style="background:rgba(239,68,68,0.15);color:#f87171;padding:6px 14px;border-radius:20px;font-size:13px">🎧 客服售后</span>
-        <span style="background:rgba(108,60,233,0.15);color:#a78bfa;padding:6px 14px;border-radius:20px;font-size:13px">⚙️ 管理运营</span>
-      </div>
-    </div>
-
-    <div class="mtw">
-      <table class="mt2">
-        <thead><tr><th>AI价值</th><th>说明</th></tr></thead>
-        <tbody>
-          <tr><td>💰 降本</td><td>替代人工重复劳动，减少人力成本</td></tr>
-          <tr><td>⚡ 提效</td><td>自动化流程，提升整体运营效率</td></tr>
-          <tr><td>📈 增收</td><td>精准营销、智能推荐，提升转化率</td></tr>
-          <tr><td>✅ 降错</td><td>减少人为失误，提升质量稳定性</td></tr>
-          <tr><td>🧠 优化决策</td><td>数据驱动决策，降低判断风险</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="ph" style="margin-top:20px">
-      <p>💡 <strong>关键洞见</strong>：AI不是单一工具的引入，而是企业全流程的重构。从营销到客服，从研发到管理，每个环节都有AI赋能的切入点。</p>
-    </div>
-
-    <!-- AI Tools Classification -->
-    <h2 class="stitle" style="margin-top:64px">AI工具全景分类</h2>
-    <p class="ssub" style="margin-bottom:24px">来源：火山引擎生态伙伴 · 天智AI</p>
-
-    <img src="https://i.ibb.co/Lhn8RSDc/doubao-img5.jpg" alt="AI工具全景分类" style="width:100%;max-width:700px;border-radius:12px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.1)">
-    <p style="color:var(--dim);font-size:13px;margin-bottom:24px">图5：AI工具全景分类 — 内容生成类/视觉设计类（来源：火山引擎生态伙伴 · 天智AI）</p>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
-      <div class="ec">
-        <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">📝 内容生成类AI</h3>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">能力：写文案、做方案、写话术、写标题、写合同、写汇报</p>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">适用：市场、文案、策划、行政</p>
-        <p style="color:var(--accent);font-size:15px;font-weight:700">💪 1个人顶3个文案/策划/文员</p>
-      </div>
-      <div class="ec">
-        <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">🎨 视觉设计类AI</h3>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">能力：做海报、做详情页、做LOGO、做短视频封面、产品图</p>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">适用：设计、市场、运营</p>
-        <p style="color:var(--accent);font-size:15px;font-weight:700">⚡ 不用请设计师，几分钟出图</p>
-      </div>
-    </div>
-
-    <div class="ph">
-      <p>💡 <strong>关键结论</strong>：重塑内容生产与视觉设计流程，大幅降低人力与时间成本。一个人+AI工具 = 以前3-5个人的工作量。</p>
-    </div>
-
-    <!-- AI Tools Classification Part 2 -->
-    <h2 class="stitle" style="margin-top:64px">AI工具全景分类（二）</h2>
-    <p class="ssub" style="margin-bottom:24px">来源：火山引擎生态伙伴 · 天扬AI</p>
-
-    <img src="https://i.ibb.co/spqW8DMh/doubao-img6.jpg" alt="AI工具全景分类二" style="width:100%;max-width:700px;border-radius:12px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.1)">
-    <p style="color:var(--dim);font-size:13px;margin-bottom:24px">图6：AI工具全景分类（二）— 短视频与音视频AI、智能办公类AI（来源：火山引擎生态伙伴 · 天扬AI）</p>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
-      <div class="ec">
-        <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">🎬 短视频与音视频AI</h3>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">能力：自动剪辑、自动字幕、自动配音、自动生成口播</p>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">适用：新媒体、运营、市场</p>
-        <p style="color:var(--accent);font-size:15px;font-weight:700">💪 1个人做10条短视频，不用拍摄团队</p>
-      </div>
-      <div class="ec">
-        <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">📊 智能办公类AI</h3>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">能力：自动做表格、自动写纪要、自动总结、自动做PPT</p>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">适用：行政、文员、管理</p>
-        <p style="color:var(--accent);font-size:15px;font-weight:700">⏰ 老板每天省2-3小时</p>
-      </div>
-    </div>
-
-    <div class="ph">
-      <p>💡 <strong>关键结论</strong>：AI让个人生产力大幅提升。短视频1人顶团队，办公AI让管理者每天省出2-3小时处理核心事务。</p>
-    </div>
-
-    <!-- AI Tools Part 3 -->
-    <h2 class="stitle" style="margin-top:64px">AI工具全景分类（三）</h2>
-    <p class="ssub" style="margin-bottom:24px">来源：火山引擎生态伙伴 · 天扬AI</p>
-
-    <img src="https://i.ibb.co/JjLfDjYV/doubao-img7.jpg" alt="AI工具全景分类三" style="width:100%;max-width:700px;border-radius:12px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.1)">
-    <p style="color:var(--dim);font-size:13px;margin-bottom:24px">图7：AI工具全景分类（三）— 销售客服类AI、数据分析与经营决策AI（来源：火山引擎生态伙伴 · 天扬AI）</p>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px">
-      <div class="ec">
-        <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">📞 销售客服类AI</h3>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">能力：自动回复、智能客服、AI外呼、客户分层、话术推荐</p>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">适用：销售、客服</p>
-        <p style="color:var(--accent);font-size:15px;font-weight:700">⏰ 24小时接单，不错过任何客户</p>
-      </div>
-      <div class="ec">
-        <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">📊 数据分析与经营决策AI</h3>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">能力：看数据、算利润、分析客户、预测库存、算回本</p>
-        <p style="color:var(--dim);font-size:13px;margin-bottom:12px">适用：管理、运营、财务</p>
-        <p style="color:var(--accent);font-size:15px;font-weight:700">💰 不靠感觉做生意，靠数据赚钱</p>
-      </div>
-    </div>
-
-    <div class="ph">
-      <p>💡 <strong>AI工具全景分类四大方向全部集齐</strong>：内容生成 → 视觉设计 → 短视频/办公 → 销售客服/数据分析。企业经营全流程AI化，一个都不能少。</p>
-    </div>
-
-    <!-- AI Selection Principles -->
-    <h2 class="stitle" style="margin-top:64px">企业选AI工具的三大原则</h2>
-    <p class="ssub" style="margin-bottom:24px">来源：火山引擎生态伙伴 · 天扬AI</p>
-
-    <img src="https://i.ibb.co/xS0sV94W/doubao-img8.jpg" alt="企业选AI工具三大原则" style="width:100%;max-width:700px;border-radius:12px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.1)">
-    <p style="color:var(--dim);font-size:13px;margin-bottom:24px">图8：企业选AI工具的三大原则（来源：火山引擎生态伙伴 · 天扬AI）</p>
-
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px">
-      <div class="ec" style="text-align:center">
-        <div style="font-size:32px;margin-bottom:12px">💰</div>
-        <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:8px">低成本、低门槛</h3>
-        <p style="color:var(--dim);font-size:13px">优先选择免费或低成本、操作简单的工具，降低试错成本</p>
-      </div>
-      <div class="ec" style="text-align:center">
-        <div style="font-size:32px;margin-bottom:12px">👥</div>
-        <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:8px">易上手、易落地</h3>
-        <p style="color:var(--dim);font-size:13px">确保员工能够快速掌握并应用到实际工作中，减少培训成本</p>
-      </div>
-      <div class="ec" style="text-align:center">
-        <div style="font-size:32px;margin-bottom:12px">📈</div>
-        <h3 style="font-size:15px;font-weight:700;color:#fff;margin-bottom:8px">见效快、可量化</h3>
-        <p style="color:var(--dim);font-size:13px">选择能快速看到效果并能量化评估的工具，验证投入产出比</p>
-      </div>
-    </div>
-
-    <div class="ph">
-      <p>💡 遵循这三大原则，筛选出最适合企业现阶段发展的AI工具，实现技术驱动的增长。</p>
-    </div>
-
-    <!-- Industry AI Matching -->
-    <h2 class="stitle" style="margin-top:64px">按行业匹配AI工具</h2>
-    <p class="ssub" style="margin-bottom:24px">来源：火山引擎生态伙伴 · 天扬AI</p>
-
-    <img src="https://i.ibb.co/279kFZcq/doubao-img9.jpg" alt="按行业匹配AI工具" style="width:100%;max-width:700px;border-radius:12px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.1)">
-    <p style="color:var(--dim);font-size:13px;margin-bottom:24px">图9：按行业匹配AI工具（来源：火山引擎生态伙伴 · 天扬AI）</p>
-
-    <div class="cg">
-      <div class="cc">
-        <div class="ind">🛒 零售/电商</div>
-        <div class="res">AI客服 · AI库存 · AI标签<br>AI投放 · AI获客</div>
-      </div>
-      <div class="cc">
-        <div class="ind">🏭 生产/制造</div>
-        <div class="res">AI获客 · AI排产<br>AI数据看板 · AI质检</div>
-      </div>
-      <div class="cc">
-        <div class="ind">🍽️ 服务/本地生活</div>
-        <div class="res">AI预约 · AI话术 · AI营销</div>
-      </div>
-      <div class="cc">
-        <div class="ind">📋 商贸/咨询/培训</div>
-        <div class="res">AI获客 · AI方案 · AI内容</div>
-      </div>
-    </div>
-
-    <div class="ph" style="margin-top:20px">
-      <p>💡 每个行业都有对应的AI工具组合，按需匹配，不盲目采购。选择工具前先明确：要解决什么问题？在哪个环节提效？</p>
-    </div>
-
-    <!-- Outsourcing Platforms -->
-    <h2 class="stitle" style="margin-top:64px">AI外包接单平台与渠道</h2>
-    <p class="ssub" style="margin-bottom:24px">有了AI工具，下一步是找到靠谱的接单渠道 💰</p>
-
-    <div class="ec" style="margin-bottom:20px">
-      <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">🏢 垂直AI外包平台</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>平台</th><th>适合人群</th><th>单子类型</th></tr></thead>
-          <tbody>
-            <tr><td>程序员客栈 proginn.com</td><td>有技术背景</td><td>AI模型调用、数据标注、Prompt工程</td></tr>
-            <tr><td>开源众包 zb.oschina.net</td><td>有开发能力</td><td>AI训练数据、算法外包</td></tr>
-            <tr><td>DataJuren datajuren.com</td><td>有标注能力</td><td>数据标注、文本清洗、分类标注</td></tr>
-            <tr><td>LabelStudio labelstudio.org</td><td>有标注团队</td><td>图像/语音/文本标注</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="ec" style="margin-bottom:20px">
-      <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">🌐 通用外包平台</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>平台</th><th>单子类型</th></tr></thead>
-          <tbody>
-            <tr><td>猪八戒 zbj.com</td><td>文案、设计、视频配音、PPT制作</td></tr>
-            <tr><td>一品威客 epweike.cn</td><td>LOGO设计、电商设计、短视频制作</td></tr>
-            <tr><td>闲鱼 xianyu.ali</td><td>AI生成头像/壁纸/表情包（个人卖家）</td></tr>
-            <tr><td>淘宝 搜索"AI代做"</td><td>PPT、Logo、海报、简历优化</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="ec" style="margin-bottom:20px">
-      <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">📱 内容创作类平台</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>平台</th><th>变现方式</th></tr></thead>
-          <tbody>
-            <tr><td>抖音开放平台 open.douyin.com</td><td>AI短剧/广告分成、带货佣金</td></tr>
-            <tr><td>小红书品牌合作</td><td>品牌软文、种草笔记</td></tr>
-            <tr><td>微信公众号</td><td>AI辅助写作、内容付费</td></tr>
-            <tr><td>知乎</td><td>付费问答、专栏订阅</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="ec" style="margin-bottom:20px">
-      <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">💼 企业端外包（高单价）</h3>
-      <div class="etw">
-        <table class="et">
-          <thead><tr><th>渠道</th><th>说明</th></tr></thead>
-          <tbody>
-            <tr><td>企业微信社群</td><td>加入AI服务商社群、企业采购社群</td></tr>
-            <tr><td>钉钉/飞书社群</td><td>搜索"AI代运营""AI外包"关键词</td></tr>
-            <tr><td>BOSS直聘（兼职）</td><td>搜索"AI兼职""Prompt兼职""AI外包"</td></tr>
-            <tr><td>行业展会</td><td>火山引擎、阿里云等峰会现场对接</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="ec" style="background:linear-gradient(135deg,rgba(255,149,0,0.08),rgba(108,60,233,0.06));border-color:rgba(255,149,0,0.3)">
-      <h3 style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px">🚀 最快变现路径（实测可跑通）</h3>
-      <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="display:flex;align-items:center;gap:10px"><span style="background:var(--accent);color:#000;font-weight:700;padding:2px 10px;border-radius:10px;font-size:13px">1</span><span style="color:var(--dim);font-size:14px">闲鱼/淘宝：挂"AI代做PPT/海报/文案"，用豆包+即梦/Seedream验证需求</span></div>
-        <div style="display:flex;align-items:center;gap:10px"><span style="background:var(--accent);color:#000;font-weight:700;padding:2px 10px;border-radius:10px;font-size:13px">2</span><span style="color:var(--dim);font-size:14px">猪八戒：注册接单，前期低价冲好评，积累案例后提价</span></div>
-        <div style="display:flex;align-items:center;gap:10px"><span style="background:var(--accent);color:#000;font-weight:700;padding:2px 10px;border-radius:10px;font-size:13px">3</span><span style="color:var(--dim);font-size:14px">抖音/小红书：发布AI生成案例作品，自然引流客户</span></div>
-        <div style="display:flex;align-items:center;gap:10px"><span style="background:var(--accent);color:#000;font-weight:700;padding:2px 10px;border-radius:10px;font-size:13px">4</span><span style="color:var(--dim);font-size:14px">企业微信群：加入本地商家代运营群，从身边商家开始</span></div>
-      </div>
-      <p style="margin-top:12px;color:var(--accent);font-size:14px;font-weight:600">💡 核心竞争力是"会用工具+懂客户需求"，不是技术。</p>
     </div>
   </div>
 </section>
